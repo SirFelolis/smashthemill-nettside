@@ -1,1 +1,1 @@
-# smashthemill-nettside
+# Website for Smash the Mill tournament series.
