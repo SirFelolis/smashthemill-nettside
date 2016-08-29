@@ -1,10 +1,10 @@
 from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls import include
-from testapp import views
+from templatetest import views
 
-urlpatterns = [
+urlpatterns = [ 
     url(r'^$', views.index, name='index'),
-    url(r'^testapp/', include('testapp.urls')),
+    url(r'^templatetest/', include('templatetest.urls')),
     url(r'^admin/', admin.site.urls),
 ]
