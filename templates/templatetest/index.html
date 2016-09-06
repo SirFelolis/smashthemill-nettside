@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html>
 
+{% load staticfiles %}
+
+<html>
 	<head>
 		<title>This is a test of templates</title>
+		<link rel="stylesheet" href="{% static "css/stylesheet.css" %}" />
+		<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css" />
 	</head>
 
 	<body>
-		<h1> Rango says...</h1>
-		<div>
-			hey there partner! <br />
-			<strong>{{ boldmessage}}</strong><br />
-			<p>{{ softmessage }}</p><br />
-		</div>
+		<header>
+			<h1> Rango says...</h1>
+		</header>
+		<main>
+			<section>
+				hey there partner! <br />
+				<strong>{{ boldmessage }}</strong><br />
+				<img src="{% static "images/hiof.jpg" %}"
+					 alt="Høgskolen i Østfold Logo" />
+				<p>{{ softmessage }}</p><br />
+			</section>
+		</main>
 	</body>
 
 </html>
